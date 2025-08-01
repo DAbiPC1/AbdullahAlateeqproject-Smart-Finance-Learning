@@ -27,5 +27,6 @@
 
 ## ⚙️ طريقة التشغيل
 1. قم بتنزيل المشروع:
+2. قم بفتح ملف index.html 
    ```bash
    git clone https://github.com/USERNAME/AbdullahAlateeqproject-Smart-Finance-Learning.git
