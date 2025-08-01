@@ -27,6 +27,7 @@
 
 ## ⚙️ طريقة التشغيل
 1. قم بتنزيل المشروع:
-2. قم بفتح ملف index.html 
+2. قم بشتغيل السيرفر عن طريق كتابة امر python app.py
+3. افتح ملف index.html في متصفح 
    ```bash
    git clone https://github.com/USERNAME/AbdullahAlateeqproject-Smart-Finance-Learning.git
