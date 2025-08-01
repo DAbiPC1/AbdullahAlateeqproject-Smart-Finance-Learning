@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرب الميزانية الذكي - بنك الإنماء</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .big-title {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            font-weight: bold;
+            color: #2e2e30;
+            font-family: Arial, sans-serif;
+            z-index: 999;
+        }
+        .big-title.left {
+            left: 20px;
+        }
+        .big-title.right {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- نص كبير في منتصف اليسار -->
+        <div class="big-title left">مدرب الميزانية الذكي</div>
+        <!-- نص كبير في منتصف اليمين -->
+        <div class="big-title right">مدرب الميزانية الذكي</div>
+
+        <!-- شعار بنك الإنماء الكبير -->
+        <div class="side-logo left-side">
+            <img src="./images/inma-logo.png" alt="شعار بنك الإنماء">
+        </div>
+
+        <div class="chat-wrapper">
+            <!-- الشات الأساسي -->
+            <div class="chat-box-container">
+                <div class="chat-header">
+                    <img src="./images/inma-logo.png" alt="شعار بنك الإنماء" class="logo right-logo">
+                    <img src="./images/taweeq-logo.webp" alt="شعار أكاديمية طويق" class="logo left-logo">
+                </div>
+                <div id="chat-box" class="chat-box">
+                    <!-- مؤشر الكتابة سيتم حقنه ديناميكيًا من الجافاسكربت بعد رسالة المستخدم -->
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="اكتب هنا..." />
+                    <button onclick="sendMessage()">إرسال</button>
+                </div>
+            </div>
+
+            <!-- شات الجوال -->
+            <div class="phone-view">
+                <div class="phone-header">
+                    <img src="./images/inma-logo.png" alt="شعار بنك الإنماء" class="logo right-logo">
+                    <img src="./images/taweeq-logo.webp" alt="شعار أكاديمية طويق" class="logo left-logo">
+                </div>
+                <div id="phone-chat-box" class="phone-screen">
+                    <!-- مؤشر الكتابة سيتم حقنه ديناميكيًا من الجافاسكربت بعد رسالة المستخدم -->
+                </div>
+                <div class="phone-input">
+                    <input type="text" id="phone-user-input" placeholder="اكتب هنا..." />
+                    <button onclick="sendMessageFromPhone()">إرسال</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- شعار أكاديمية طويق الكبير -->
+        <div class="side-logo right-side">
+            <img src="./images/taweeq-logo.webp" alt="شعار أكاديمية طويق">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
